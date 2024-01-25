@@ -176,7 +176,7 @@ public class Runigram {
 	 */
 	public static void morph(Color[][] source, Color[][] target, int n) {
 		for(int i = 0; i < n; i++){
-			source = blend(source, target, ((n-i)/n));
+			source = blend(source, target, ((double)(n-i)/(double)(n)));
 		}
 	}
 	
